@@ -34,7 +34,7 @@ use strict;
 use warnings;
 use base qw(Net::Server);
 use IO::Socket ();
-use POSIX qw(tmpnam);
+use File::Temp qw(tmpnam);
 use Socket qw(SOCK_DGRAM SOCK_STREAM);
 
 sub post_bind_hook {

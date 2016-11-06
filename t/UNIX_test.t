@@ -2,7 +2,7 @@
 
 package Net::Server::Test;
 use strict;
-use POSIX qw(tmpnam);
+use File::Temp qw(tmpnam);
 use English qw($UID $GID);
 use FindBin qw($Bin);
 use lib $Bin;
